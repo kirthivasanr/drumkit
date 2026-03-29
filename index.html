@@ -3,30 +3,53 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Drum Kit</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
 <body>
+  <main class="stage">
+    <h1 id="title">Drum 🥁 Kit</h1>
+    <p class="subtitle">Feel the groove — tap a pad or use your keyboard keys.</p>
 
-  <h1 id="title">Drum 🥁 Kit</h1>
-  <div class="set">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
-  </div>
-
+    <section class="set" aria-label="Drum pad controls">
+      <button class="w drum" aria-label="Tom 1 (W key)">
+        <span class="key">w</span>
+        <span class="instrument">tom 1</span>
+      </button>
+      <button class="a drum" aria-label="Tom 2 (A key)">
+        <span class="key">a</span>
+        <span class="instrument">tom 2</span>
+      </button>
+      <button class="s drum" aria-label="Tom 3 (S key)">
+        <span class="key">s</span>
+        <span class="instrument">tom 3</span>
+      </button>
+      <button class="d drum" aria-label="Tom 4 (D key)">
+        <span class="key">d</span>
+        <span class="instrument">tom 4</span>
+      </button>
+      <button class="j drum" aria-label="Snare (J key)">
+        <span class="key">j</span>
+        <span class="instrument">snare</span>
+      </button>
+      <button class="k drum" aria-label="Crash (K key)">
+        <span class="key">k</span>
+        <span class="instrument">crash</span>
+      </button>
+      <button class="l drum" aria-label="Kick (L key)">
+        <span class="key">l</span>
+        <span class="instrument">kick</span>
+      </button>
+    </section>
+  </main>
 
   <footer>
     Made with ❤️ in London.
   </footer>
   <script src="script.js"></script>
 </body>
-
 
 </html>
